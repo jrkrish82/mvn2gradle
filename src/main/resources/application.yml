@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/movies?useSSL=false
+    username: root
+    password: password-1
+  mvc:
+   view:
+    prefix: /WEB-INF/
+    suffix: .jsp
+
+s3:
+  endpointUrl: http://127.0.0.1:9000
+  accessKey: D8NRB2PM6ZUJNOMQL7XQ
+  secretKey: 8qXi/laDWz+E+Ntwq9pymF1t0M0AHGbIRcy+/viP
+  bucketName: moviefun
